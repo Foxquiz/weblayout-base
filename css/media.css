@@ -494,6 +494,8 @@
     /* -moz-column-gap: 0; */
     /* column-gap: 0; */
     /* row-gap: 30px; */
+    -webkit-columns: 3;
+    -moz-columns: 3;
     columns: 3;
   }
 
@@ -965,6 +967,8 @@
     -moz-column-gap: 78px;
     column-gap: 78px;
     /* row-gap: 20px; */
+    -webkit-columns: 2;
+    -moz-columns: 2;
     columns: 2;
   }
 
