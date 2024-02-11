@@ -1,11 +1,12 @@
 @media (max-width: 1200px) {
   .container {
-    max-width: 854px;
+    padding: 0 100px;
   }
 
   /* header  */
   .header {
     position: relative;
+    padding-top: 28px;
   }
 
   .header::after {
@@ -31,7 +32,6 @@
   .header__container {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    padding-top: 28px;
     row-gap: 46px;
   }
 
@@ -67,13 +67,13 @@
   }
 
   /* hero  */
-  .hero__container {
+  .hero {
     padding-top: 83px;
     padding-bottom: 90px;
   }
 
   .hero__container::before {
-    top: 16.7%;
+    top: 48%;
     left: 65%;
     width: 255px;
     height: 270px;
@@ -89,7 +89,7 @@
   }
 
   /* podcasts  */
-  .podcast__container {
+  .podcast {
     padding-top: 95px;
   }
 
@@ -108,12 +108,15 @@
   }
 
   /* playlists */
+  .playlists {
+    padding-bottom: 94px;
+  }
+
   .playlists__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding-bottom: 94px;
     gap: 31px;
   }
 
@@ -173,7 +176,7 @@
     background-image: url(../img/sticker_1024.png);
   }
 
-  .promo__container {
+  .promo {
     padding-top: 95px;
     padding-bottom: 40px;
   }
@@ -183,7 +186,7 @@
   }
 
   /* about */
-  .about__container {
+  .about {
     padding-top: 95px;
   }
 
@@ -216,11 +219,11 @@
 
 @media (max-width: 992px) {
   .container {
-    max-width: 570px;
+    padding: 0 114px;
   }
 
   /* header  */
-  .header__container {
+  .header {
     padding-top: 27px;
     padding-bottom: 31px;
   }
@@ -248,6 +251,10 @@
 
   .podcast__list {
     --offsets-podcast: 0;
+  }
+
+  .broadcast {
+    padding-bottom: 0;
   }
 
   .broadcast__container {
@@ -349,7 +356,7 @@
     width: 67%;
   }
 
-  .playlists__container {
+  .playlists {
     padding-bottom: 112px;
   }
 
@@ -357,13 +364,16 @@
     --offsets-playlist: 1;
   }
 
+  .promo {
+      padding-top: 46px;
+      padding-bottom: 94px;
+  }
+
   .promo__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding-top: 46px;
-    padding-bottom: 94px;
     gap: 47px;
   }
 
@@ -391,6 +401,10 @@
     margin-bottom: 26px;
   }
 
+  .about {
+    padding-bottom: 95px;
+  }
+
   .about__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -399,7 +413,6 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding-bottom: 95px;
     gap: 30px;
   }
 
@@ -459,11 +472,11 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding-bottom: 78px;
+    margin-bottom: 69px;
     row-gap: 76px;
   }
 
-  .footer__left {
+    .footer__left {
     margin: 0;
   }
 
@@ -486,29 +499,28 @@
   }
 
   .footer__list {
-    /* -ms-flex-line-pack: justify; */
-    /* align-content: space-between; */
-    /* max-width: 100%; */
-    /* max-height: 120px; */
-    /* -webkit-column-gap: 0; */
-    /* -moz-column-gap: 0; */
-    /* column-gap: 0; */
-    /* row-gap: 30px; */
     -webkit-columns: 3;
     -moz-columns: 3;
     columns: 3;
   }
+
+  .footer-list__item {
+      margin-bottom: 30px;
+    }
 
   .footer__trademark {
     padding-top: 1px;
   }
 }
 
-@media (max-width: 576px) {
-  .container {
-    max-width: 286px;
-  }
+@media (max-width: 680px) {
+    .container {
+      padding: 0 32px;
+    }
+}
 
+
+@media (max-width: 576px) {
   .title {
     font-size: 24px;
   }
@@ -525,9 +537,12 @@
     bottom: 0;
   }
 
-  .header__container {
+  .header {
     padding-top: 14px;
     padding-bottom: 7px;
+  }
+
+  .header__container {
     row-gap: 29px;
   }
 
@@ -550,7 +565,6 @@
     -ms-flex-negative: 0;
     flex-shrink: 0;
     width: calc(100% + ((100vw - 100%) / 2));
-    /* width: calc(100% + 32px); */
     overflow-x: scroll;
   }
 
@@ -564,7 +578,7 @@
   }
 
   /* hero */
-  .hero__container {
+  .hero {
     padding-top: 41px;
     padding-bottom: 40px;
   }
@@ -584,7 +598,7 @@
   }
 
   /* podcast */
-  .podcast__container {
+  .podcast {
     padding-top: 55px;
     padding-bottom: 54px;
   }
@@ -619,9 +633,9 @@
   }
 
   /* broadcast */
-  .broadcast__container {
+  .broadcast {
     padding-top: 55px;
-    padding-bottom: 29px;
+    padding-bottom: 8px;
   }
 
   .broadcast__title {
@@ -677,27 +691,38 @@
     fill: var(--color-hover);
   }
 
+  .broadcast__container {
+    margin-bottom: 30px;
+  }
+
   .archive--bottom {
     -webkit-box-pack: left;
     -ms-flex-pack: left;
     justify-content: left;
+    padding-top: 30px;
     padding-left: 10px;
     padding-bottom: 46px;
   }
 
+  .archive::before {
+    top: 0;
+  }
+
   .archive__wrap {
+    padding-top: 0;
     width: 50%;
   }
 
   .archive__btn {
     padding: 7.1px 29px;
+    margin: 0;
     -webkit-box-ordinal-group: 3;
     -ms-flex-order: 2;
     order: 2;
   }
 
   .archive__descr {
-    margin-bottom: 8px;
+    margin-bottom: 7px;
     -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
     order: 1;
@@ -711,9 +736,9 @@
   }
 
   /* guests */
-  .guests__container {
+  .guests {
     padding-top: 55px;
-    padding-bottom: 55px;
+    padding-bottom: 54px;
   }
 
   .guests__top {
@@ -751,7 +776,7 @@
   }
 
   /* playlists  */
-  .playlists__container {
+  .playlists {
     padding-top: 55px;
     padding-bottom: 54px;
   }
@@ -797,8 +822,11 @@
   }
 
   /* promo  */
-  .promo__container {
+  .promo {
     padding-bottom: 54px;
+  }
+
+  .promo__container {
     gap: 33px;
   }
 
@@ -843,9 +871,12 @@
   }
 
   /* about */
+  .about {
+      padding-top: 55px;
+      padding-bottom: 54px;
+  }
+
   .about__container {
-    padding-top: 55px;
-    padding-bottom: 54px;
     gap: 0;
   }
 
@@ -854,7 +885,7 @@
   }
 
   .about-top__text {
-    margin-bottom: 29px;
+    margin-bottom: 30px;
   }
 
   .about-top__descr {
@@ -952,24 +983,26 @@
   }
 
   /* footer  */
-  .footer__container {
-    margin-bottom: 20px;
+    .footer {
     padding-top: 54px;
-    padding-bottom: 38px;
+    }
+
+  .footer__container {
+    margin-bottom: 56px;
     row-gap: 77px;
   }
 
   .footer-list {
-    /* -ms-flex-line-pack: start; */
-    /* align-content: flex-start; */
-    /* max-height: 180px; */
     -webkit-column-gap: 78px;
     -moz-column-gap: 78px;
     column-gap: 78px;
-    /* row-gap: 20px; */
     -webkit-columns: 2;
     -moz-columns: 2;
     columns: 2;
+  }
+
+  .footer-list__item {
+    margin-bottom: 20px;
   }
 
   .footer-list__link {
