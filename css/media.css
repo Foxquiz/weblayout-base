@@ -77,7 +77,7 @@
     left: 65%;
     width: 255px;
     height: 270px;
-    background-image: url(/img/hero-microphone-1024.png);
+    background-image: url(../img/hero-microphone-1024.png);
   }
 
   .hero__title {
@@ -170,7 +170,7 @@
   .promo__picture::before {
     top: 3px;
     left: 0.4px;
-    background-image: url(/img/sticker_1024.png);
+    background-image: url(../img/sticker_1024.png);
   }
 
   .promo__container {
@@ -301,7 +301,7 @@
     margin-right: 20px;
     width: 70px;
     height: 96px;
-    background-image: url(/img/broadcast-mic-768.png);
+    background-image: url(../img/broadcast-mic-768.png);
     background-repeat: no-repeat;
     background-size: 70px 96px;
   }
@@ -384,7 +384,7 @@
     top: 8px;
     width: 30%;
     height: 33%;
-    background-image: url(/img/sticker_1920.png);
+    background-image: url(../img/sticker_1920.png);
   }
 
   .promo__text {
@@ -436,7 +436,7 @@
     height: 114px;
     min-width: 100%;
     max-width: 639px;
-    background-image: url(/img/spiral_768.svg);
+    background-image: url(../img/spiral_768.svg);
     background-repeat: no-repeat;
     background-size: 740px 114px;
   }
@@ -648,7 +648,7 @@
   }
 
   .blog__img--5 {
-    background-image: url(/img/broadcast-5-320.jpg);
+    background-image: url(../img/broadcast-5-320.jpg);
   }
 
   .blog__wrapper {
