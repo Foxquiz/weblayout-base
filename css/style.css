@@ -1668,6 +1668,9 @@ img {
 .footer__trademark {
   display: block;
   text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
   line-height: 103.336%;
   color: var(--color-gray);
 }
